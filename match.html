@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Қай кейіпкерге ұқсайсың?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">Ішкі сапар</div>
+      <nav>
+        <a href="index.html">Басты бет</a>
+        <a href="match.html" class="active">Қай кейіпкер?</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container narrow">
+      <h1 class="page-title">Сен қай кейіпкерге ұқсайсың?</h1>
+
+      <form id="characterMatch" class="quiz-box">
+        <div class="question">
+          <h3>1. Өзіңді қалай сипаттайсың?</h3>
+          <label><input type="radio" name="m1" value="enspe" required> Табанды, ішкі мықты</label>
+          <label><input type="radio" name="m1" value="santiago"> Сабырлы, төзімді</label>
+          <label><input type="radio" name="m1" value="hamlet"> Көп ойланамын</label>
+          <label><input type="radio" name="m1" value="prince"> Сезімтал, арманшыл</label>
+        </div>
+
+        <div class="question">
+          <h3>2. Саған қай сөз жақын?</h3>
+          <label><input type="radio" name="m2" value="robinson" required> Бейімделу</label>
+          <label><input type="radio" name="m2" value="holden"> Қарсылық</label>
+          <label><input type="radio" name="m2" value="santiago"> Төзім</label>
+          <label><input type="radio" name="m2" value="enspe"> Тереңдік</label>
+        </div>
+
+        <div class="question">
+          <h3>3. Саған қай кеңістік жақын?</h3>
+          <label><input type="radio" name="m3" value="santiago" required> Теңіз</label>
+          <label><input type="radio" name="m3" value="enspe"> Шыңырау</label>
+          <label><input type="radio" name="m3" value="prince"> Жұлдыздар</label>
+          <label><input type="radio" name="m3" value="holden"> Қала көшесі</label>
+        </div>
+
+        <button type="submit" class="btn primary full">Менің кейіпкерімді анықта</button>
+      </form>
+
+      <div id="matchResult" class="result-box hidden"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
