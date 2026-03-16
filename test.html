@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Психологиялық динамикалық тест</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">Ішкі сапар</div>
+      <nav>
+        <a href="index.html">Басты бет</a>
+        <a href="test.html" class="active">Психо тест</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container narrow">
+      <h1 class="page-title">Сенің ішкі типің қандай?</h1>
+      <p class="page-subtitle">
+        Сұрақтарға жауап бер де, өзіңе жақын психологиялық типті анықта.
+      </p>
+
+      <form id="psychTest" class="quiz-box">
+        <div class="question">
+          <h3>1. Қиындыққа тап болсаң...</h3>
+          <label><input type="radio" name="q1" value="fighter" required> Бірден әрекет етемін</label>
+          <label><input type="radio" name="q1" value="observer"> Әуелі ойланып аламын</label>
+          <label><input type="radio" name="q1" value="dreamer"> Жалғыз қалғым келеді</label>
+          <label><input type="radio" name="q1" value="calm"> Сабырмен қабылдаймын</label>
+        </div>
+
+        <div class="question">
+          <h3>2. Саған қай орта жақын?</h3>
+          <label><input type="radio" name="q2" value="calm" required> Табиғат пен тыныштық</label>
+          <label><input type="radio" name="q2" value="fighter"> Қиындық көп орта</label>
+          <label><input type="radio" name="q2" value="dreamer"> Қиял мен еркіндік</label>
+          <label><input type="radio" name="q2" value="observer"> Бақылауға болатын орта</label>
+        </div>
+
+        <div class="question">
+          <h3>3. Сен үшін маңыздысы...</h3>
+          <label><input type="radio" name="q3" value="fighter" required> Мақсат</label>
+          <label><input type="radio" name="q3" value="dreamer"> Арман</label>
+          <label><input type="radio" name="q3" value="observer"> Шындықты түсіну</label>
+          <label><input type="radio" name="q3" value="calm"> Ішкі тыныштық</label>
+        </div>
+
+        <button type="submit" class="btn primary full">Нәтижені көру</button>
+      </form>
+
+      <div id="testResult" class="result-box hidden"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
