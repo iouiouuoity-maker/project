@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мини-ойындар</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">Ішкі сапар</div>
+      <nav>
+        <a href="index.html">Басты бет</a>
+        <a href="games.html" class="active">Ойындар</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container narrow">
+      <h1 class="page-title">Мини-ойын</h1>
+      <p class="page-subtitle">Символды дұрыс кейіпкермен сәйкестендір.</p>
+
+      <div class="quiz-box">
+        <div class="question">
+          <h3>“Теңіз” символы қай кейіпкерге тән?</h3>
+          <button class="option-btn" onclick="showGameResult(false)">Еңсеп</button>
+          <button class="option-btn" onclick="showGameResult(true)">Сантьяго</button>
+          <button class="option-btn" onclick="showGameResult(false)">Гамлет</button>
+          <button class="option-btn" onclick="showGameResult(false)">Холден</button>
+        </div>
+
+        <div id="gameResult" class="result-box hidden"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
